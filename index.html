@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>体調アンケート (LIFF)</title>
+    <style>
+        body { font-family: sans-serif; background-color: #f4f7f6; padding: 20px; text-align: center; }
+        .container { max-width: 400px; margin: 0 auto; background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        .btn-condition { display: block; width: 100%; background-color: #06c755; color: white; border: none; padding: 15px; margin: 10px 0; font-size: 16px; font-weight: bold; border-radius: 25px; cursor: pointer; }
+        .btn-condition:hover { background-color: #05b04b; }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>現在の体調を教えてください</h2>
+        <div id="loading">LIFF初期化中...</div>
+        
+        <!-- 初期状態は非表示、LIFF起動後に表示 -->
+        <div id="app-content" style="display: none;">
+            <button class="btn-condition" data-status="元気">😊 元気</button>
+            <button class="btn-condition" data-status="少し不調">🙁 少し不調</button>
+            <button class="btn-condition" data-status="連絡希望">📞 連絡希望</button>
+        </div>
+    </div>
+
+    <!-- main.jsを読み込む -->
+    <script type="module" src="/main.js"></script>
+</body>
+</html>
