@@ -2,7 +2,7 @@ import liff from '@line/liff';
 
 // Netlifyの環境変数（VITE_から始まる必要がある）からLIFF IDを取得
 // const MY_LIFF_ID = import.meta.env.VITE_LIFF_ID;
-const MY_LIFF_ID = '2010577631-vofEenx4'; // ここにLIFF IDを直接記述することも可能です
+const MY_LIFF_ID = '2010577631-ygDmcL2g'; // ここにLIFF IDを直接記述することも可能です
 
 async function initLiff() {
     try {
